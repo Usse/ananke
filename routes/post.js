@@ -20,7 +20,7 @@ fs.readdir(dir,function(err,files) {
 			if(err) throw err;
 			if(c>0) {
 				data[c] = {
-					title   : file.replace('.md',''),  
+					title   : file.replace('.md',''),
 					link    : file.replace('.md',''),
 					content : md_parser(html)
 				};
@@ -37,7 +37,7 @@ exports.index = function(req, res){
 	for (var i = 1; i < data.length; i++) {
     	if(data[i].title == req.params.id) {
     		thisPost = data[i];
-    	}    		
+    	}
 	}
   	res.render('post', { title: 'Blog Engine', postData: thisPost });
 };
