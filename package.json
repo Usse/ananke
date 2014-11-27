@@ -1,0 +1,15 @@
+{
+  "name": "ananke",
+  "description" : "just another blog engine powered by node.js",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "*",
+    "ejs": "*",
+    "stylus": "*",
+    "node-markdown":"*"
+  }
+}
