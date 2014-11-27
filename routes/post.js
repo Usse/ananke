@@ -26,7 +26,7 @@ fs.readdir(dir,function(err,files) {
 				};
 			}
 			if(0===--c) {
-				//console.log(data);
+				console.log(data);
 			}
 		})
 	})
@@ -39,5 +39,7 @@ exports.index = function(req, res){
     		thisPost = data[i];
     	}
 	}
-  	res.render('post', { title: 'Blog Engine', postData: thisPost });
+
+
+	res.render('post', { title: 'Ananke', postData: thisPost });
 };
