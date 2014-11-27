@@ -7,9 +7,9 @@
     "start": "node app"
   },
   "dependencies": {
-    "express": "*",
-    "jade": "*",
-    "stylus": "*",
-    "node-markdown":"*"
+    "express": "4.10.4",
+    "jade": "1.7.0",
+    "stylus": "0.49.3",
+    "node-markdown":"0.1.1"
   }
 }
